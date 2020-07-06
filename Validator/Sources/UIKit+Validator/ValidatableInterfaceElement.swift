@@ -1,7 +1,7 @@
 import Foundation
 import ObjectiveC
 
-public protocol ValidatableInterfaceElement {
+public protocol ValidatableInterfaceElement: class {
     
     associatedtype InputType: Validatable
     var inputValue: InputType? { get }
